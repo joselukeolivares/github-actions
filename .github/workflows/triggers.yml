@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - aprendiendo-github-actions
 jobs:
   hola-mundo_JOB:
     runs-on: ubuntu-latest
