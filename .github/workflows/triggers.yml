@@ -10,6 +10,6 @@ jobs:
       - name : Succes_print
         run : echo 'Se copiaron los archivos exitosamente' 
       - name : settingUp_Node
-        uses : actions/node-setup@v3
+        uses : actions/setup-node@v3
         with: 
           node-version: 18
