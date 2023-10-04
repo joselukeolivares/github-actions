@@ -1,6 +1,9 @@
 name : Triggers
 run-name: Triggers Runs ¡Aprendiendo a usar Trigeers!
-on: [push]
+on:
+  push:
+    branches:
+    - maester
 jobs:
   hola-mundo_JOB:
     runs-on: ubuntu-latest
