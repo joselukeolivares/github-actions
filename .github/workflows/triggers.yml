@@ -5,7 +5,7 @@ jobs:
   hola-mundo_JOB:
     runs-on: ubuntu-latest
     steps:
-      - name: echo
-        run : echo 'hola mundo'
-      - name : echo_2
-        run : echo 'okoko' 
+      - name: checkout_copyFiles
+        uses : actions/checkout@v3
+      - name : Succes_print
+        run : echo 'Se copiaron los archivos exitosamente' 
