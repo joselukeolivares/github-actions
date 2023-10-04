@@ -7,7 +7,7 @@ on:
   pull_request:
     types: [opened, syncronize,reopened]
   schedule:
-  - cron : '30 10,22 * * *'
+  - cron : '5 * * * *'
 jobs:
   hola-mundo_JOB:
     runs-on: ubuntu-latest
