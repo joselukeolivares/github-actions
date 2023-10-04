@@ -9,3 +9,7 @@ jobs:
         uses : actions/checkout@v3
       - name : Succes_print
         run : echo 'Se copiaron los archivos exitosamente' 
+      - name : settingUp_Node
+        uses : actions/node-setup@v3
+        with: 
+          node-version: 18
