@@ -20,5 +20,5 @@ jobs:
       - uses: actions/node-setup@v3
         with:
           node-version: 18
-      - name: run hola_mundo file
+      - name: Runing hola_mundo file
       - run: node hola_mundo.js
