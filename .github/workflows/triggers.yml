@@ -1,15 +1,6 @@
 name : Triggers
 run-name: Triggers Runs ¡Aprendiendo a usar Trigeers!
-on: 
-  push:
-    branches:
-    - masters
-  pull_request:
-    types: [opened,syncronize,reopened]
-    paths:
-      - '**.js'
-  schedule:
-    - cron: '5 * * * *'
+on: [push]
 jobs:
   hola-mundo_JOB:
     runs-on: ubuntu-latest
