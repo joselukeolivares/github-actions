@@ -5,9 +5,11 @@ jobs:
   hola-mundo:
     runs-on: ubuntu-latest
     steps:
-      - name: Correr Script
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: echo
+        run: echo "hello world"      
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-        run: node index.js
-       
+      - run: node hola_mundo.js
