@@ -4,12 +4,6 @@ on:
   push:
     branches:
     - master
-  pull_request:
-    types: [opened, synchronize, reopened]
-    paths: 
-      - '**.js'
-  schedule:
-  - cron : '5 * * * *'
 jobs:
   hola-mundo_JOB:
     runs-on: ubuntu-latest
