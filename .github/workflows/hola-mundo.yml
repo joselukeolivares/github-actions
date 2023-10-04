@@ -1,0 +1,13 @@
+name: Aprendiendo Github Acions
+run-name: ¡Estoy aprendiendo Github-Actions!
+on: [push]
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Correr Script
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+        run: node index.js
+       
