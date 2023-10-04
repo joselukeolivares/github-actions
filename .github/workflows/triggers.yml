@@ -1,0 +1,24 @@
+name : Triggers
+run-name: Triggers Runs ¡Aprendiendo a usar Trigeers!
+on:
+  push:
+    branches:
+    - maester
+  pull_request:
+    types: [opened, syncronize,reopened]
+  schedule:
+  - cron : '30 10,22 * * *'
+jobs:
+  hola-mundo_JOB:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout_copyFiles
+        uses : actions/checkout@v3
+      - name : Succes_print
+        run : echo 'Se copiaron los archivos exitosamente' 
+      - name : settingUp_Node
+        uses : actions/setup-node@v3
+        with: 
+          node-version: 18
+      - name: RunApp
+        run : node hola_mundo.js
