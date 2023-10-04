@@ -5,7 +5,8 @@ on:
     branches:
     - master
   pull_request:
-    types: [opened, syncronize,reopened]
+    types: opened, synchronize, reopened]
+    paths: '**.js'
   schedule:
   - cron : '5 * * * *'
 jobs:
