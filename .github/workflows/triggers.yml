@@ -3,7 +3,7 @@ run-name: Triggers Runs ¡Aprendiendo a usar Trigeers!
 on:
   push:
     branches:
-    - maester
+    - master
   pull_request:
     types: [opened, syncronize,reopened]
   schedule:
