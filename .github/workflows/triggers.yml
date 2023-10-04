@@ -13,4 +13,6 @@ on:
 jobs:
   hola-mundo_JOB:
     runs-on: ubuntu-latest
-
+    steps:
+      - name: echo
+        run : echo 'hola mundo'
