@@ -13,13 +13,13 @@ on:
         type: string
 jobs:
   mayor:
-    if: ${{input.edad>18}}
+    if: ${{input.edad > 18}}
     runs-on: ubuntu-latest
     steps:
       - name: correr script
         run: echo ${{input.nombre}} es mayor de edad
   menor:
-    if: ${{insput.edad<=18}}
+    if: ${{insput.edad <= 18}}
     runs-on: ubuntu-latest
     steps:
       - name: correr scrip
